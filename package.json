@@ -1,0 +1,54 @@
+{
+  "name": "dsh-mt-download",
+  "version": "0.1.0",
+  "description": "Multi-channel file downloader for DeepSeek Harness: 16-connection aria2c acceleration with automatic single-stream fallback.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "assets",
+    "cordis.patch.yml",
+    "LICENSE",
+    "README.md",
+    "README.en.md",
+    "CHANGELOG.md"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "download",
+    "downloader",
+    "aria2",
+    "aria2c",
+    "multithread",
+    "accelerator"
+  ],
+  "author": "643048695",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/643048695/dsh-mt-download.git"
+  },
+  "homepage": "https://github.com/643048695/dsh-mt-download#readme",
+  "bugs": {
+    "url": "https://github.com/643048695/dsh-mt-download/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "icon": "assets/icon.svg"
+}

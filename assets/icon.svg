@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E293B"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="boltGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="50%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#6366F1"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Card -->
+  <rect width="128" height="128" rx="28" fill="url(#bgGrad)"/>
+  <rect x="2" y="2" width="124" height="124" rx="26" fill="none" stroke="#334155" stroke-width="2" opacity="0.6"/>
+  
+  <!-- Multi-channel Tracks (16-thread visual streams) -->
+  <g opacity="0.4" stroke="#38BDF8" stroke-width="2" stroke-linecap="round">
+    <line x1="36" y1="32" x2="36" y2="52"/>
+    <line x1="48" y1="26" x2="48" y2="60"/>
+    <line x1="80" y1="26" x2="80" y2="60"/>
+    <line x1="92" y1="32" x2="92" y2="52"/>
+  </g>
+  
+  <!-- Dynamic Down Arrow / Rocket -->
+  <path d="M64 24 L64 74 M46 56 L64 74 L82 56" fill="none" stroke="url(#boltGrad)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Speed Dash Rings -->
+  <path d="M30 84 Q64 96 98 84" fill="none" stroke="url(#accentGrad)" stroke-width="4" stroke-linecap="round" stroke-dasharray="8 6"/>
+  
+  <!-- Destination Base / Storage Platform -->
+  <rect x="34" y="96" width="60" height="8" rx="4" fill="url(#accentGrad)"/>
+</svg>

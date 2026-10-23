@@ -1,0 +1,8 @@
+# dsh-mt-download bundle patch
+- insert:
+    - id: dsh-mt-download
+      name: 'dsh-mt-download'
+      config:
+        defaultConnections: 16
+        timeoutSeconds: 600
+        aria2Port: 16801

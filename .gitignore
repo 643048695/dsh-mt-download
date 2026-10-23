@@ -1,0 +1,21 @@
+node_modules/
+*.log
+
+# 编辑器 / 系统
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# 发布过程残留
+*.orig
+*.bak
+*.rej
+*.tmp
+
+# 本地临时工作目录
+_pub_prep/
+_pub_prep*/
+_publish/
+_release/
+.npmrc
